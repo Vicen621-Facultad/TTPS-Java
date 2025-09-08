@@ -1,0 +1,63 @@
+target/
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+**/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# Build artifacts and deployment
+/target/
+/build/
+*.war
+*.ear
+
+# Tomcat specific directories and files
+/logs/
+/temp/
+/work/
+/webapps/*/logs/
+/webapps/*/temp/
+/webapps/*/work/
+
+# IDE and OS generated files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Sensitive or local configuration files (if not managed separately)
+*.properties.local
+*.xml.local
