@@ -1,6 +1,5 @@
 target/
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-**/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
