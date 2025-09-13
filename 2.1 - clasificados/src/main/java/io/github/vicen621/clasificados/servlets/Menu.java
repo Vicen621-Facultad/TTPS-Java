@@ -1,4 +1,4 @@
-package io.github.vicen621.clasificados;
+package io.github.vicen621.clasificados.servlets;
 
 import io.github.vicen621.clasificados.users.UserType;
 import jakarta.servlet.RequestDispatcher;
@@ -12,6 +12,11 @@ import java.util.Arrays;
 
 @WebServlet(name = "Menu", value = "/menu")
 public class Menu extends HttpServlet {
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.sendRedirect("error401.html");
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

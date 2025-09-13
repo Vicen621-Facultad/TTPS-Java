@@ -1,6 +1,6 @@
-package io.github.vicen621.clasificados;
+package io.github.vicen621.clasificados.servlets;
 
-import jakarta.servlet.*;
+import io.github.vicen621.clasificados.SitioClasificado;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 

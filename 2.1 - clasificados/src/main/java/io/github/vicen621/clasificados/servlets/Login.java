@@ -1,4 +1,4 @@
-package io.github.vicen621.clasificados;
+package io.github.vicen621.clasificados.servlets;
 
 import io.github.vicen621.clasificados.users.User;
 import io.github.vicen621.clasificados.users.UserType;
@@ -40,6 +40,6 @@ public class Login extends HttpServlet {
                     }
                 });
 
-        response.sendRedirect("error.html");
+        response.sendRedirect("loginError.html");
     }
 }
