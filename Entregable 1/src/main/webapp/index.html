@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compre sus entradas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compre sus entradas</h1>
+        <form action="imprime_entrada" method="post">
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" id="nombre" type="text"><br>
+            <label for="apellidos">Apellidos:</label>
+            <input name="apellidos" id="apellidos" type="text"><br>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email"><br>
+            <label for="dni">DNI:</label>
+            <input name="dni" id="dni" type="text"><br>
+
+            <label for="pelicula">Selecciona la película:</label>
+            <select name="pelicula" id="pelicula">
+                <option value="Lilo & Stitch">Lilo & Stitch</option>
+                <option value="La mujer de la fila">La mujer de la fila</option>
+                <option value="Demon Slayer">Demon Slayer</option>
+                <option value="La luz que imaginamos">La luz que imaginamos</option>
+            </select><br>
+            <label for="cantidad">Cantidad de entradas:</label>
+            <input name="cantidad" id="cantidad" type="number" min="1" max="10"><br>
+            <button type="submit" value="Comprar entradas">Comprar entradas</button>
+        </form>
+        <div class="actions">
+            <a href="visualizar_estadisticas">Ver estadisticas</a>
+        </div>
+    </div>
+</body>
+</html>
