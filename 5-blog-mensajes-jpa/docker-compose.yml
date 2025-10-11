@@ -1,0 +1,25 @@
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  app:
+    # Construye la imagen a partir del Dockerfile en el directorio actual (.)
+    build: .
+    restart: always
+    container_name: blog_app_container
+    ports:
+      # Mapea el puerto 8080 de tu máquina al 8080 del contenedor
+      - "8080:8080"
+    depends_on:
+      # Le dice a Docker que inicie el servicio 'db' antes de iniciar 'app'
+      - db
