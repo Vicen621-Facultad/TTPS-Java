@@ -18,7 +18,7 @@ services:
     restart: always
     container_name: blog_app_container
     ports:
-      # Mapea el puerto 8080 de tu máquina al 8080 del contenedor
+      # Mapea el puerto 8080 de mi máquina al 8080 del contenedor
       - "8080:8080"
     depends_on:
       # Le dice a Docker que inicie el servicio 'db' antes de iniciar 'app'
